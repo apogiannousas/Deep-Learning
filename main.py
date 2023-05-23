@@ -16,7 +16,7 @@ import evaluate
 import data_utils
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
+print(f"And the device is...... {device}")
 parser = argparse.ArgumentParser()
 parser.add_argument("--lr", 
 	type=float, 
