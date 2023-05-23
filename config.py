@@ -3,7 +3,7 @@ dataset = 'ourdata'
 assert dataset in ['ml-1m', 'pinterest-20', 'ourdata']
 
 # model name 
-model = 'MLP'
+model = 'NeuMF-end'
 assert model in ['MLP', 'GMF', 'NeuMF-end', 'NeuMF-pre']
 
 # paths

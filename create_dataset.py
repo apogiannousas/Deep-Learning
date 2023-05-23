@@ -27,9 +27,11 @@ for index, entry in file_dataframe.iterrows():
 	
 	interactions_dict[entry['user']].append([entry['item'],entry['timestamp']])
 
+# Sort by timestamp
 for key in interactions_dict.keys():
 	interactions_dict[key] = sorted(interactions_dict[key], key=lambda x: x[1])
 
+# Sort users
 myKeys = list(interactions_dict.keys())
 myKeys.sort()
 interactions_dict = {i: interactions_dict[i] for i in myKeys}
@@ -45,12 +47,15 @@ item_ids = set(item_ids)
 # Create test negative dataset
 negative_samples = pd.DataFrame()
 
+# print("=============================== Now doing something =================================")
+
 for user in interactions_dict.keys():
 	last_element = interactions_dict[user][-1]
 	item_interactions = {i[0] for i in interactions_dict[user]}
 	
 	sample_space = item_ids - item_interactions
-	samples = random.sample(sample_space, k=100)
+
+	samples = random.sample(sample_space, k=99)
 	
 	# add the tuple of the user interaction
 	new_negative_entry = [str((user, last_element[0]))]
