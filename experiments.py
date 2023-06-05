@@ -18,15 +18,18 @@ if do_first:
 	for k in range (5,11):
 		ndcg_tmp = []
 		hr_tmp = []
-		for _ in range(5):
+		
+		for i in range(5):
+			print(i)
 			cmd = f"python3 main.py --top_k {k} > tmp.out 2> /dev/null"
 			os.system(cmd)
-
+		
+			
 			with open("tmp.out", "r") as f:
 				last_line = f.readlines()[-1]
-				last_line = last_line.split(" = ")
-				ndcg_tmp.append(float(last_line[-1].strip()))
-				hr_tmp.append(float(last_line[1].split(", ")[0].strip()))
+			last_line = last_line.split(" = ")
+			ndcg_tmp.append(float(last_line[-1].strip()))
+			hr_tmp.append(float(last_line[1].split(", ")[0].strip()))
 
 		ndcg_tmp.remove(max(ndcg_tmp))
 		ndcg_tmp.remove(min(ndcg_tmp))
@@ -50,10 +53,11 @@ else:
 	ndcg = []
 	hr = []
 
-	for n in range (1,11):
+	for n in range (6,11):
 		ndcg_tmp = []
 		hr_tmp = []
-		for _ in range(5):
+		for i in range(5):
+			print(i)
 			cmd = f"python3 main.py --top_k 10 --num_ng {n} > tmp.out 2> /dev/null"
 			os.system(cmd)
 

@@ -2,14 +2,16 @@ import pandas as pd
 import numpy as np
 import config
 import random
+import matplotlib.pyplot as plt
+from statistics import mean, stdev
 
-filename = "u.data"
-dataset = "ourdata"
+filename = "ml-1m.train.rating"
+dataset = "example"
 data_path = config.main_path
 
 train_filename = data_path + "{}.train.rating".format(dataset)
 test_rating = data_path + '{}.test.rating'.format(dataset)
-test_negative = data_path + '{}.test.negative'.format(dataset)
+test_negative = data_path + '...........................................................................................................................................{}.test.negative'.format(dataset)
 
 file_dataframe = pd.read_csv(
 	data_path + filename,
@@ -35,6 +37,31 @@ for key in interactions_dict.keys():
 myKeys = list(interactions_dict.keys())
 myKeys.sort()
 interactions_dict = {i: interactions_dict[i] for i in myKeys}
+
+
+num_of_user_ratings = []
+for user in interactions_dict.keys():
+	num_of_user_ratings.append(len(list(interactions_dict[user])) + 1)
+	# print(f"User: {user} did {num_of_user_ratings[-1]} ratings")
+
+# for _ in range(int(0.05 * len(num_of_user_ratings))):
+# 	num_of_user_ratings.remove(max(num_of_user_ratings))
+
+with open(filename + ".prob", "w") as f:
+	f.write(str(num_of_user_ratings))
+
+# plt.hist(num_of_user_ratings, bins=100)
+# plt.xlabel('Probability')
+# plt.ylabel('Value')
+# plt.title('Probability Distribution of large dataset')
+
+# m = mean(num_of_user_ratings)
+# print("Mean is : ", m)
+# print("Standard deviation is: ", stdev(num_of_user_ratings, m))
+
+# plt.show()
+
+exit()
 
 # Create list with all unique item ids
 for key in interactions_dict.keys():

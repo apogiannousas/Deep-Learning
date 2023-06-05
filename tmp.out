@@ -1,33 +1,42 @@
 And the device is...... cpu
 The time elapse of epoch 000 is: 00: 00: 11
-HR: 0.356	NDCG: 0.241
+HR: 0.534	NDCG: 0.305
 The time elapse of epoch 001 is: 00: 00: 11
-HR: 0.414	NDCG: 0.276
-The time elapse of epoch 002 is: 00: 00: 12
-HR: 0.429	NDCG: 0.290
+HR: 0.602	NDCG: 0.343
+The time elapse of epoch 002 is: 00: 00: 11
+HR: 0.627	NDCG: 0.358
 The time elapse of epoch 003 is: 00: 00: 12
-HR: 0.464	NDCG: 0.313
-The time elapse of epoch 004 is: 00: 00: 11
-HR: 0.452	NDCG: 0.311
+HR: 0.653	NDCG: 0.380
+The time elapse of epoch 004 is: 00: 00: 12
+HR: 0.643	NDCG: 0.375
 The time elapse of epoch 005 is: 00: 00: 12
-HR: 0.460	NDCG: 0.313
+HR: 0.642	NDCG: 0.371
 The time elapse of epoch 006 is: 00: 00: 12
-HR: 0.469	NDCG: 0.321
+HR: 0.634	NDCG: 0.375
 The time elapse of epoch 007 is: 00: 00: 12
-HR: 0.470	NDCG: 0.314
+HR: 0.646	NDCG: 0.375
 The time elapse of epoch 008 is: 00: 00: 12
-HR: 0.455	NDCG: 0.312
+HR: 0.632	NDCG: 0.366
 The time elapse of epoch 009 is: 00: 00: 11
-HR: 0.439	NDCG: 0.303
+HR: 0.639	NDCG: 0.373
 The time elapse of epoch 010 is: 00: 00: 11
-HR: 0.445	NDCG: 0.305
-The time elapse of epoch 011 is: 00: 00: 12
-HR: 0.442	NDCG: 0.303
+HR: 0.629	NDCG: 0.367
+The time elapse of epoch 011 is: 00: 00: 11
+HR: 0.622	NDCG: 0.362
 The time elapse of epoch 012 is: 00: 00: 12
-HR: 0.422	NDCG: 0.292
+HR: 0.614	NDCG: 0.357
 The time elapse of epoch 013 is: 00: 00: 11
-HR: 0.438	NDCG: 0.299
-The time elapse of epoch 014 is: 00: 00: 11
-HR: 0.426	NDCG: 0.289
-The time elapse of epoch 015 is: 00: 00: 12
-HR: 0.425	NDCG: 0.294
+HR: 0.627	NDCG: 0.360
+The time elapse of epoch 014 is: 00: 00: 12
+HR: 0.611	NDCG: 0.351
+The time elapse of epoch 015 is: 00: 00: 11
+HR: 0.628	NDCG: 0.354
+The time elapse of epoch 016 is: 00: 00: 12
+HR: 0.622	NDCG: 0.349
+The time elapse of epoch 017 is: 00: 00: 12
+HR: 0.603	NDCG: 0.346
+The time elapse of epoch 018 is: 00: 00: 12
+HR: 0.607	NDCG: 0.347
+The time elapse of epoch 019 is: 00: 00: 12
+HR: 0.604	NDCG: 0.339
+End. Best epoch 003: HR = 0.653, NDCG = 0.380
