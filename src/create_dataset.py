@@ -11,7 +11,7 @@ data_path = config.main_path
 
 train_filename = data_path + "{}.train.rating".format(dataset)
 test_rating = data_path + '{}.test.rating'.format(dataset)
-test_negative = data_path + '...........................................................................................................................................{}.test.negative'.format(dataset)
+test_negative = data_path + '{}.test.negative'.format(dataset)
 
 file_dataframe = pd.read_csv(
 	data_path + filename,
